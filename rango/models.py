@@ -1,9 +1,12 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Category(models.Model):
     name = models.CharField(max_length=128, unique=True)
+    views = models.IntegerField(default=0)
+    likes = models.IntegerField(default=0)
 
     class Meta:
         verbose_name_plural = 'Categories'
@@ -18,4 +21,5 @@ class Page(models.Model):
     views = models.IntegerField(default=0)
 
     def __str__(self): # For Python 2, use __unicode__ too
-        return self.title
+        return self.title
+
