@@ -12,8 +12,9 @@ def index(request):
 	return render(request, 'rango/index.html', context_dict)
 
 def about(request):
-	context_dict = {'boldmessage': "Rango says here is the about page"}
-	return render(request, 'rango/about.html', context=context_dict)
+	print(request.method)
+	print(request.user)
+	return render(request, 'rango/about.html', {})
 	
 def show_category(request, category_name_slug):
 	context_dict = {}
@@ -46,27 +47,25 @@ def add_category(request):
 
 
 def add_page(request, category_name_slug):
-        try:
-                category = Category.objects.get(slug=category_name_slug)
-        except Category.DoesNotExist:
-                category = None
+    try:
+        category = Category.objects.get(slug=category_name_slug)
+    except Category.DoesNotExist:
+        category = None
 
-        form = PageForm()
-        if request.method == 'POST':
-                form = PageForm(request.POST)
-                if form.is_valid():
-                        if category:
-                                page = form.save(commit=False)
-                                page.category = category
-                                page.views = 0
-                                page.save()
-                                return show_category(request, category_name_slug)
-                else:
-                        print(form.errors)
+    form = PageForm()
+    if request.method == 'POST':
+        form = PageForm(request.POST)
+        if form.is_valid():
+            if category:
+                page = form.save(commit=False)
+                page.category = category
+                page.views = 0
+                page.save()
+            return show_category(request, category_name_slug)
+        else:
+            print(form.errors)
 
-        context_dict = {'form':form, 'category': category}
-        return render(request, 'rango/add_page.html', context_dict)
-
-
+    context_dict = {'form':form, 'category': category}
+    return render(request, 'rango/add_page.html', context_dict) 
 
 
