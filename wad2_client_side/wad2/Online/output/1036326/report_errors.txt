@@ -1,0 +1,1320 @@
+rango.tests_chapter4.Chapter4ViewTest.test_view_has_title
+F
+======================================================================
+FAIL: test_view_has_title (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter4.py", line 17, in test_view_has_title
+    self.assertIn('<title>', response.content.decode('ascii'))
+AssertionError: '<title>' not found in "Rango says hey there partner! <br/> <a href='/rango/about/'>About</a>"
+
+----------------------------------------------------------------------
+Ran 1 test in 0.032s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_index_using_template
+F
+======================================================================
+FAIL: test_index_using_template (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter4.py", line 24, in test_index_using_template
+    self.assertTemplateUsed(response, 'rango/index.html')
+  File "C:\Users\NATADE~1\Envs\thesis\lib\site-packages\django\test\testcases.py", line 578, in assertTemplateUsed
+    self.fail(msg_prefix + "No templates used to render the response")
+AssertionError: No templates used to render the response
+
+----------------------------------------------------------------------
+Ran 1 test in 0.107s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_about_using_template
+F
+======================================================================
+FAIL: test_about_using_template (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter4.py", line 31, in test_about_using_template
+    self.assertTemplateUsed(response, 'rango/about.html')
+  File "C:\Users\NATADE~1\Envs\thesis\lib\site-packages\django\test\testcases.py", line 578, in assertTemplateUsed
+    self.fail(msg_prefix + "No templates used to render the response")
+AssertionError: No templates used to render the response
+
+----------------------------------------------------------------------
+Ran 1 test in 0.032s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_rango_picture_displayed
+F
+======================================================================
+FAIL: test_rango_picture_displayed (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter4.py", line 37, in test_rango_picture_displayed
+    self.assertIn('img src="/static/images/rango.jpg'.lower(), response.content.decode('ascii').lower())
+AssertionError: 'img src="/static/images/rango.jpg' not found in "rango says hey there partner! <br/> <a href='/rango/about/'>about</a>"
+
+----------------------------------------------------------------------
+Ran 1 test in 0.031s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_cat_picture_displayed
+F
+======================================================================
+FAIL: test_cat_picture_displayed (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter4.py", line 44, in test_cat_picture_displayed
+    self.assertIn('img src="/media/cat.jpg'.lower(), response.content.decode('ascii').lower())
+AssertionError: 'img src="/media/cat.jpg' not found in 'rango says here is the about page. <br/> <a href="/rango/">index</a>'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.025s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_about_contain_image
+F
+======================================================================
+FAIL: test_about_contain_image (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter4.py", line 51, in test_about_contain_image
+    self.assertIn('img src="/static/images/', response.content.decode('ascii'))
+AssertionError: 'img src="/static/images/' not found in 'Rango says here is the about page. <br/> <a href="/rango/">Index</a>'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.030s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_serving_static_files
+F
+======================================================================
+FAIL: test_serving_static_files (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter4.py", line 56, in test_serving_static_files
+    self.assertIsNotNone(result)
+AssertionError: unexpectedly None
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter5.Chapter5LiveServerTests.test_population_script
+E
+======================================================================
+ERROR: tests_chapter5 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter5
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter5.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter5.Chapter5LiveServerTests.test_admin_page_contains_title_url_and_category
+E
+======================================================================
+ERROR: tests_chapter5 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter5
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter5.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter5.Chapter5LiveServerTests.test_can_create_new_category_via_admin_site
+E
+======================================================================
+ERROR: tests_chapter5 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter5
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter5.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter5.Chapter5ModelTests.test_create_a_new_category
+E
+======================================================================
+ERROR: tests_chapter5 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter5
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter5.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter5.Chapter5ModelTests.test_create_pages_for_categories
+E
+======================================================================
+ERROR: tests_chapter5 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter5
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter5.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter5.Chapter5ModelTests.test_population_script_changes
+E
+======================================================================
+ERROR: tests_chapter5 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter5
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter5.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ModelTests.test_category_contains_slug_field
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_index_context
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_index_displays_five_most_liked_categories
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_index_displays_no_categories_message
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_index_displays_five_most_viewed_pages
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_index_contains_link_to_categories
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_category_context
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_category_page_using_template
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_category_page_displays_pages
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_category_page_displays_empty_message
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6ViewTests.test_category_page_displays_category_does_not_exist_message
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter6.Chapter6LiveServerTests.test_category_redirect_to_desired_page
+E
+======================================================================
+ERROR: tests_chapter6 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter6
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter6.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7LiveServerTestCase.test_form_is_saving_new_category
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7LiveServerTestCase.test_form_error_when_category_field_empty
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7LiveServerTestCase.test_add_category_that_already_exists
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7LiveServerTestCase.test_form_is_saving_new_page
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7LiveServerTestCase.test_cleaned_data_from_add_page
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_index_contains_link_to_add_category
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_add_category_form_is_displayed_correctly
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_add_page_form_is_displayed_correctly
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_access_category_that_does_not_exists
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_link_to_add_page_only_appears_in_valid_categories
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter7.Chapter7ViewTests.test_category_contains_link_to_add_page
+E
+======================================================================
+ERROR: tests_chapter7 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter7
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter7.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_base_template_exists
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter8.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_titles_displayed
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter8.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_pages_using_templates
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter8.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_url_reference_in_index_page_when_logged
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter8.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_url_reference_in_index_page_when_not_logged
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter8.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_link_to_index_in_base_template
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter8.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter8.Chapter8ViewTests.test_url_reference_in_category_page
+E
+======================================================================
+ERROR: tests_chapter8 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter8
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter8.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_register_user
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_admin_contains_user_profile
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_links_in_index_page_when_logged
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_links_in_index_page_when_not_logged
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_logout_link
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_add_category_when_logged
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_add_page_when_logged
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_add_page_when_not_logged
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_access_restricted_page_when_logged
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_access_restricted_page_when_not_logged
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9LiveServerTests.test_logged_user_message_in_index
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ModelTests.test_user_profile_model
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_registration_form_is_displayed_correctly
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_login_form_is_displayed_correctly
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_login_provides_error_message
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_login_redirects_to_index
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter9.Chapter9ViewTests.test_upload_image
+E
+======================================================================
+ERROR: tests_chapter9 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter9
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter9.py", line 12, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10SessionTests.test_user_number_of_access_and_last_access_to_index
+E
+======================================================================
+ERROR: tests_chapter10 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter10
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter10.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10ViewTests.test_index_shows_number_of_visits
+E
+======================================================================
+ERROR: tests_chapter10 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter10
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter10.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10ViewTests.test_about_page_shows_number_of_visits
+E
+======================================================================
+ERROR: tests_chapter10 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter10
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter10.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10ViewTests.test_visit_number_is_passed_via_context
+E
+======================================================================
+ERROR: tests_chapter10 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_chapter10
+Traceback (most recent call last):
+  File "c:\users\nata de coco\appdata\local\programs\python\python36\Lib\unittest\loader.py", line 153, in loadTestsFromName
+    module = __import__(module_name)
+  File "E:\univ\course2\Internet\Workspace\wad2_client_side\wad2\Online\1036326\rango\tests_chapter10.py", line 11, in <module>
+    from rango.models import Page, Category
+ImportError: cannot import name 'Page'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+===========================================================================
+
+
